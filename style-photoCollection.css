@@ -1,0 +1,80 @@
+:root {
+    --jumbotron-padding-y: 3rem;
+  }
+
+.jumbotron{
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background: url(/bgPhoto.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+  .title{
+      padding-top: 100px;
+      margin-left: 20px;
+  }
+  
+  @media (min-width: 800px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+  }
+  .header__logo-box {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 
+    position:
+    1. static: default. the left, bottom... properties won't be able to affect the position
+    2. fixed: The element will always stay at the same place even if the page is scrolled
+    3. relative: Setting top, bottom properties will cause the position changing
+    4. absolute: is positioned relative to the nearest positioned ancestor. However, if it doesn't have ancestors, it uses the document body, and moves along with page scrolling.
+    5. sticky: is positioned based on the user's scroll position.
+    */ }
+  .header__logo {
+    height: 7rem; }
+  .header__text-box {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      /* This text-align property here make the button link to the middle
+      because the btn is displayed inline-block, which is treated as text */ }
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+  .photo-title{
+    padding:35px;
+    display:flex;
+    justify-content: center;
+    align-self: center;
+  }
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  footer p {
+    margin-bottom: .25rem;
+  }
+  
+  
+ 
+  
+ 
+ 
+  
