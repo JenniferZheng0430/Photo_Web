@@ -47,5 +47,5 @@ console.log(makeCol)
 selectivePhotoTarget.append(makeCol)
 
 
- }
+      }
 
